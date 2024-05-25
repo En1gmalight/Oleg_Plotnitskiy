@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Таблица</title>
+    <meta charset="UTF-8">
+</head>
+
 <body>
-    <table align="center" bgcolor="#E2E2E2" border="2" bordercolor="#008000" cellpadding="15" cellspacing="5" width="500">
-        <caption><b>Форматирование заднего фона таблиц, рядов и ячеек</b></caption>
+    <table border="1">
         <tr>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">1</td>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">2</td>
-            <td align="center" valign="middle" bgcolor="#FFCACA" border="3" bordercolor="#008000">2</td>
-        </tr>
-        <tr bgcolor="#FFFFCA">
-            <td align="center" valign="middle" border="2" bordercolor="#008000">4</td>
-            <td align="center" valign="middle" bgcolor="#ECFFEC" border="2" bordercolor="#008000">5</td>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">6</td>
+            <td colspan="2" align="left"><b>ячейка 1</b></td>
+            <td><b>ячейка 3</b></td>
         </tr>
         <tr>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">7</td>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">8</td>
-            <td align="center" valign="middle" border="2" bordercolor="#008000">9</td>
+            <td rowspan="2" align="center"><b>ячейка 4</b></td>
+            <td><b>ячейка 5</b></td>
+            <td><b>ячейка 6</b></td>
+        </tr>
+        <tr>
+            <td><b>ячейка 8</b></td>
+            <td><b>ячейка 9</b></td>
         </tr>
     </table>
+
+    <p>_______________________________</p>
+
+    <table border="1">
+        <tr>
+            <td colspan="3" align="left"><b>ячейка 1</b></td>
+        </tr>
+        <tr>
+            <td><b>ячейка 4</b></td>
+            <td rowspan="2" align="center"><b>ячейка 5</b></td>
+            <td><b>ячейка 6</b></td>
+        </tr>
+        <tr>
+            <td><b>ячейка 8</b></td>
+            <td><b>ячейка 9</b></td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
