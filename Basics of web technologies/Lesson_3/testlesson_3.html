@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form style="border: 2px solid black; border-radius: 6px;width: 60%; padding: 20px;">
+        <h2>Запись на курсы</h2>
+        <hr>
+        <div>
+            <p>
+                <label for="login">Логин:</label><br>
+                <input type="text" id="login" name="login" value="Алексей">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="lang">Язык программирования:</label><br>
+            <p><input type="radio" id="lang" name="lang" value="C++">C++
+            <p><input type="radio" id="lang" name="lang" value="Java" checked>Java
+            <p><input type="radio" id="lang" name="lang" value="Python">Python
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="dop">Дополнительная информация</label><br>
+                <textarea name="dopInf" id="dop" cols="30" rows="5">Есть опыт программирования на C++</textarea>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="secret">Секретное слово</label><br>
+                <input type="password" id="secret">
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <input type="submit" value="отправить">
+                <input type="reset" value="очистить">
+            </p>
+        </div>
+
+    </form>
+</body>
+
+</html>
