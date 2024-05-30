@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Формы поиска</title>
+</head>
+
+<body>
+    <table style="width:700px;">
+        <tr>
+            <td valign="top">
+                <h3>Простая форма поиска с вариантами:</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Строка поиска</legend>
+                        <form name="search" method="get" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="text" name="search_string" style="display:inline-block;">
+                            <input type="submit" value="Искать" style="display:inline-block;">
+                            <br>
+                            <input type="radio" name="place_search" value="site"> на сайте
+                            <input type="radio" name="place_search" value="google"> в google
+                            <p><i>Длина запроса не более 10 символов</i></p>
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+            <td valign="top">
+                <h3>Простая форма поиска с вариантами:</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Строка поиска</legend>
+                        <form name="search_required" method="get" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="text" name="search_string_required" required autofocus
+                                style="display:inline-block;">
+                            <label for="search_string_required" style="display:inline-block;">*</label>
+                            <input type="submit" value="Искать" style="display:inline-block;">
+                            <br>
+                            <input type="radio" name="place_search_required" value="site"> на сайте
+                            <input type="radio" name="place_search_required" value="google"> в google
+                            <p><i>* - обязательное поле</i></p>
+                            <p><i>Автофокус в поле поиска</i></p>
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
