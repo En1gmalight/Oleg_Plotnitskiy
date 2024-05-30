@@ -8,43 +8,44 @@
 </head>
 
 <body>
-    <form style="width: 60%; padding: 20px;">
+    <form style="width: 80%; padding: 20px;">
         <h2>Запись на курсы</h2>
-        <hr>
-        <div>
-            <p>
-                <label for="login">Имя:</label><br>
-                <input type="text" id="login" name="login" value="Алексей">
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="lang">Язык программирования:</label>
-            </p>
-            <p><input type="radio" id="lang1" name="lang" value="C++">C++</p>
-            <p><input type="radio" id="lang2" name="lang" value="Java">Java</p>
-            <p><input type="radio" id="lang3" name="lang" value="Python"checked>Python</p>
-            
-        </div>
-        <div>
-            <p>
-                <label for="dop">Дополнительная информация</label><br>
-                <textarea name="dopInf" id="dop" cols="30" rows="5">Есть опыт программирования на C++</textarea>
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="secret">Секретное слово</label>
-                <input type="password" id="secret" name="secret">
-            </p>
-        </div>
+        <strong>
+            <hr>
+            <div>
+                <p>
+                    <label for="login">Имя:</label><br>
+                    <input type="text" id="login" name="login" value="Алексей">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="lang">Язык программирования:</label>
+                </p>
+                <p><input type="radio" id="lang1" name="lang" value="C++">C++</p>
+                <p><input type="radio" id="lang2" name="lang" value="Java" checked>Java</p>
+                <p><input type="radio" id="lang3" name="lang" value="Python">Python</p>
 
-        <div>
-            <p>
-                <input type="submit" value="отправить">
-                <input type="reset" value="очистить">
-            </p>
-        </div>
+            </div>
+            <div>
+                <p>
+                    <label for="dop">Дополнительная информация:</label><br>
+                    <textarea name="dopInf" id="dop" cols="30" rows="5">Есть опыт программирования на C++</textarea>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="secret">Секретное слово:</label><br>
+                    <input type="password" id="secret" name="secret">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </p>
+            </div>
+        </strong>
 
     </form>
 
