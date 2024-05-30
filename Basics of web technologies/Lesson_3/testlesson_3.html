@@ -5,50 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .right-aligned {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
-    <form style="width: 80%; padding: 20px;">
-        <h2>Запись на курсы</h2>
-        <strong>
-            <hr>
-            <div>
-                <p>
-                    <label for="login">Имя:</label><br>
-                    <input type="text" id="login" name="login" value="Алексей">
-                </p>
-            </div>
-            <div>
-                <p>
-                    <label for="lang">Язык программирования:</label>
-                </p>
-                <p><input type="radio" id="lang1" name="lang" value="C++">C++</p>
-                <p><input type="radio" id="lang2" name="lang" value="Java" checked>Java</p>
-                <p><input type="radio" id="lang3" name="lang" value="Python">Python</p>
+    <form style="border: 1px solid rgba(0, 0, 0, 0.868); border-radius: 15px; width: 25%; padding: 25px;">
+        <h1>Payment form</h1>
 
-            </div>
-            <div>
-                <p>
-                    <label for="dop">Дополнительная информация:</label><br>
-                    <textarea name="dopInf" id="dop" cols="30" rows="5">Есть опыт программирования на C++</textarea>
-                </p>
-            </div>
-            <div>
-                <p>
-                    <label for="secret">Секретное слово:</label><br>
-                    <input type="password" id="secret" name="secret">
-                </p>
-            </div>
-            <div>
-                <p>
-                    <input type="submit" value="Отправить">
-                    <input type="reset" value="Очистить">
-                </p>
-            </div>
-        </strong>
+        <h3>Required fields are followed by *</h3>
+
+        <h2>Contact information</h2>
+
+        <fieldset style="width: 300px; margin-left: auto; display: block;">
+            <legend>Title</legend>
+            <p><input type="radio" name="card" value="Ace">Ace</p>
+            <p><input type="radio" name="card" value="King">King</p>
+            <p><input type="radio" name="card" value="Queen">Queen</p>
+        </fieldset>
+        <p class="right-aligned">
+            <label for="login">Name:*</label>
+            <input type="text" id="login" name="login" required>
+        </p>
+        <p class="right-aligned">
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p class="right-aligned">
+            <label for="password">Password:*</label>
+            <input type="password" name="password" required>
+        </p>
+        <h2>Payment information</h2>
+        <p>
+            <center>
+                <label for="cardType">Card type:</label>
+                <select id="cardType" name="cardType">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </center>
+        </p>
+        <p class="right-aligned">
+            <label for="cardNumber">Card number:*</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+        </p>
+        <p class="right-aligned">
+            <label for="expDate">Expiration date:*</label>
+            <input type="text" id="expDate" name="expDate" placeholder="MMYY" required>
+        </p>
+        <p>
+            <center>
+                <input type="submit" value="Validate the payment">
+            </center>
+        </p>
 
     </form>
-
 </body>
 
 </html>

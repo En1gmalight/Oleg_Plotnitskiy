@@ -5,46 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .right-aligned {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
-    <form style="border: 2px solid black; border-radius: 15px; width: 20%; padding: 25px;">
-        <h2>Payment form</h2>
-        <p>
-        <h4>Required fields are followed by *</h4>
-        </p>
-        <h3>Contact information</h3>
-        <fieldset style="width: 50%; margin-left: auto; display: block;">
+    <form style="border: 1px solid rgba(0, 0, 0, 0.473); border-radius: 15px; width: 25%; padding: 25px;">
+        <h1>Payment form</h1>
+
+        <h3>Required fields are followed by *</h3>
+
+        <h2>Contact information</h2>
+
+        <fieldset style="width: 300px; margin-left: auto; display: block;">
             <legend>Title</legend>
             <p><input type="radio" name="card" value="Ace">Ace</p>
             <p><input type="radio" name="card" value="King">King</p>
             <p><input type="radio" name="card" value="Queen">Queen</p>
         </fieldset>
-        <p>
+        <p class="right-aligned">
             <label for="login">Name:*</label>
             <input type="text" id="login" name="login" required>
         </p>
-        <p>
+        <p class="right-aligned">
             <label for="email">E-mail:*</label>
             <input type="email" id="email" name="email" required>
         </p>
-        <p>
+        <p class="right-aligned">
             <label for="password">Password:*</label>
             <input type="password" name="password" required>
         </p>
-        <h3>Payment information</h3>
+        <h2>Payment information</h2>
         <p>
-            <label for="cardType">Card type:</label>
-            <select id="cardType" name="cardType">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-            </select>
+            <center>
+                <label for="cardType">Card type:</label>
+                <select id="cardType" name="cardType">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </center>
         </p>
-        <p>
+        <p class="right-aligned">
             <label for="cardNumber">Card number:*</label>
             <input type="text" id="cardNumber" name="cardNumber" required>
         </p>
-        <p>
+        <p class="right-aligned">
             <label for="expDate">Expiration date:*</label>
             <input type="text" id="expDate" name="expDate" placeholder="MMYY" required>
         </p>
@@ -54,8 +62,7 @@
             </center>
         </p>
 
-
-
+    </form>
 </body>
 
 </html>
