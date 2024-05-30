@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма заявки на работу в зоопарке</title>
+    <style>
+        input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,9 +18,9 @@
     <br>
     <br>
     <form>
-        <fieldset>
+        <fieldset style="width: 500px;">
             <legend><b>Контактная информация</b></legend>
-            <table>
+            <table style="width: 65%;">
                 <tr>
                     <td align="left"><label for="login">Имя<font color="red">*</font></label></td>
                     <td align="left"><input type="text" id="login" name="login" required></td>
@@ -31,9 +36,9 @@
             </table>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset style="width: 500px;">
             <legend><b>Персональная информация</b></legend>
-            <table>
+            <table style="width: 65%;">
                 <tr>
                     <td align="left"><label for="age">Возраст<font color="red">*</font></label></td>
                     <td align="left"><input type="text" id="age" name="age" required></td>
@@ -58,7 +63,7 @@
             </table>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset style="width: 500px;" margin="auto">
             <legend><b>Выберите ваших любимых животных</b></legend>
             <table>
                 <tr>
