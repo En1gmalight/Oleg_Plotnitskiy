@@ -84,6 +84,59 @@
                 </b>
             </td>
         </tr>
+        <tr>
+            <td valign="top">
+                <h3>Отзыв:</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <form name="feedback" method="post" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="text" name="name_feedback" required style="display:inline-block;"><label
+                                for="name_feedback">* Имя</label><br>
+                            <input type="email" name="email_feedback" required style="display:inline-block;"><label
+                                for="email_feedback">* e-mail</label><br>
+                            <textarea name="dopInf" id="dop" cols="20" rows="3">Форма отправки</textarea>
+                            <br><input type="submit" value="Отправить"><br>
+                            <i>* - обязательное поле<br>поле email - с проверкой <br>метод POST</i>
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+            <td valign="top">
+                <h3>Выпадающий и мульти списки:</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Города РБ</legend>
+                        <form name="cities" method="get" action="http://sc.it-academy.by/fe/form.php">
+                            <select name="city">
+                                <option value="Брест">Брест</option>
+                                <option value="Витебск">Витебск</option>
+                                <option value="Гомель">Гомель</option>
+                                <option value="Гродно">Гродно</option>
+                                <option value="Минск">Минск</option>
+                                <option value="Могилев">Могилев</option>
+                            </select>
+                            <select name="city_multi" multiple>
+                                <optgroup label="Города РБ">
+                                    <option value="Минск">Минск</option>
+                                    <option value="Брест">Брест</option>
+                                    <option value="Витебск">Витебск</option>
+                                    <option value="Гомель">Гомель</option>
+                                    <option value="Гродно">Гродно</option>
+                                    <option value="Могилев">Могилев</option>
+                                </optgroup>
+                                <optgroup label="Города России">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Рязань">Рязань</option>
+                                    <option value="Магадан">Магадан</option>
+                                </optgroup>
+                            </select>
+                            <input type="submit" value="OK">
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+        </tr>
     </table>
     </table>
 </body>
