@@ -10,52 +10,30 @@
     <table>
         <tr>
             <td valign="top">
-                <h3>Отзыв:</h3>
+                <h3>Загрузка файла на сервер:</h3>
                 <b>
                     <fieldset style="width: 340px;">
-                        <legend>Оставьте Ваш отзыв</legend>
-                        <form name="feedback" method="post" action="http://sc.it-academy.by/fe/form.php">
-                            <input type="text" name="name_feedback" required style="display:inline-block;"><label
-                                for="name_feedback">* Имя</label><br>
-                            <input type="email" name="email_feedback" required style="display:inline-block;"><label
-                                for="email_feedback">* e-mail</label><br>
-                            <textarea name="dopInf" id="dop" cols="20" rows="3">Форма отправки</textarea>
-                            <br><input type="submit" value="Отправить"><br>
-                            <i>* - обязательное поле<br>метод POST</i>
+                        <legend>Upload</legend>
+                        <form name="file_upload" method="post" action="http://sc.it-academy.by/fe/form.php" enctype="multipart/form-data">
+                            <input type="file" name="Файл не выбран"><br>
+                            Срок хранения (года):
+                            <input type="text" name="storage_period">
+                            <input type="submit" value="загрузить"><br>
+                            <i> Метод POST <br>В теге form используйте атрибут <br> enctype="multipart/form-data" для отправки <br>файла на сервер</i>
                         </form>
                     </fieldset>
                 </b>
             </td>
             <td valign="top">
-                <h3>Выпадающий и мульти списки:</h3>
+                <h3>Валидация данных HTML5:</h3>
                 <b>
                     <fieldset style="width: 340px;">
-                        <legend>Города РБ</legend>
-                        <form name="cities" method="get" action="http://sc.it-academy.by/fe/form.php">
-                            <select name="city">
-                                <option value="Брест">Брест</option>
-                                <option value="Витебск">Витебск</option>
-                                <option value="Гомель">Гомель</option>
-                                <option value="Гродно">Гродно</option>
-                                <option value="Минск">Минск</option>
-                                <option value="Могилев">Могилев</option>
-                            </select>
-                            <select name="city_multi" multiple>
-                                <optgroup label="Города РБ">
-                                    <option value="Минск">Минск</option>
-                                    <option value="Брест">Брест</option>
-                                    <option value="Витебск">Витебск</option>
-                                    <option value="Гомель">Гомель</option>
-                                    <option value="Гродно">Гродно</option>
-                                    <option value="Могилев">Могилев</option>
-                                </optgroup>
-                                <optgroup label="Города России">
-                                    <option value="Москва">Москва</option>
-                                    <option value="Рязань">Рязань</option>
-                                    <option value="Магадан">Магадан</option>
-                                </optgroup>
-                            </select>
-                            <input type="submit" value="OK">
+                        <legend>Строка поиска</legend>
+                        <form name="validation" method="get" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="text" name="search_string" pattern="[А-Яа-яЁё]+" placeholder="Только русские буквы"><br>
+                            Телефонный номер в формате <br>+ХХХ-ХХ-ХХХХХХХ, где Х - любое число
+                            <input type="tel" name="phone_number" pattern="\+375-[0-9]{2}-[0-9]{7}" placeholder="+375-29-1234567"><br>
+                            <input type="submit" value="Проверить">
                         </form>
                     </fieldset>
                 </b>
