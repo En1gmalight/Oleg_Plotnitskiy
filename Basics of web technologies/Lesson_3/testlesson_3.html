@@ -7,102 +7,46 @@
 </head>
 
 <body>
-    <h1>Форма заявки на работу в зоопарке</h1>
-    <i>Пожалуйста заполните форму. Обязательные поля помечены <font color="red">*</font></i>
-    <br>
-    <br>
-    <br>
-    <form>
-        <fieldset>
-            <legend><b>Контактная информация</b></legend>
-            <table>
-                <tr>
-                    <td align="left"><label for="login">Имя<font color="red">*</font></label></td>
-                    <td align="left"><input type="text" id="login" name="login" required></td>
-                </tr>
-                <tr>
-                    <td align="left"><label for="phone">Телефон</label></td>
-                    <td align="left"><input type="tel" id="phone" name="phone"></td>
-                </tr>
-                <tr>
-                    <td align="left"><label for="email">Email<font color="red">*</font></label></td>
-                    <td align="left"><input type="email" id="email" name="email" required></td>
-                </tr>
-            </table>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend><b>Персональная информация</b></legend>
-            <table>
-                <tr>
-                    <td align="left"><label for="age">Возраст<font color="red">*</font></label></td>
-                    <td align="left"><input type="text" id="age" name="age" required></td>
-                </tr>
-                <tr>
-                    <td align="left"><label for="gender">Пол</label></td>
-                    <td align="left">
-                        <select id="gender" name="gender">
-                            <option value="female">Женщина</option>
-                            <option value="male">Мужчина</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" align="left">
-                        <label for="dop">Перечислите<br>личные<br>качества</label>
-                    </td>
-                    <td align="left">
-                        <textarea name="dopInf" id="dop" cols="30" rows="8"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend><b>Выберите ваших любимых животных</b></legend>
-            <table>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="zebra" name="animal" value="zebra">
-                        <label for="zebra">Зебра</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="cat" name="animal" value="cat">
-                        <label for="cat">Кошка</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="cat" name="animal" value="cat">
-                        <label for="cat">Анаконда</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="cat" name="animal" value="cat">
-                        <label for="cat">Человек</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="antelope" name="animal" value="antelope">
-                        <label for="antelope">Слон</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="human" name="animal" value="human">
-                        <label for="human">Антилопа</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="human" name="animal" value="human">
-                        <label for="human">Голубь</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="human" name="animal" value="human">
-                        <label for="human">Краб</label>
-                    </td>
-
-                </tr>
-            </table>
-        </fieldset>
-        <br>
-        <input type="submit" value="Отправить информацию">
-    </form>
+    <table style="width:700px;">
+        <tr>
+            <td valign="top">
+                <h3>Простая форма авторизации:</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Авторизируйтесь</legend>
+                        <form name="authorization" method="post" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="text" name="login" required style="display:inline-block;"><label>* Логин</label>
+                            <br>
+                            <input type="password" name="password" required style="display:inline-block;"><label>* Пароль</label>
+                            <br>
+                            <input type="checkbox" name="stay_logged_in"> Оставаться в системе
+                            <br>
+                            <input type="submit" value="Войти">
+                            <br><i>* - обязательное поле</i>
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+            <td valign="top">
+                <h3>Опрос(голосование):</h3>
+                <b>
+                    <fieldset style="width: 340px;">
+                        <legend>Как вам?</legend>
+                        <form name="survey" method="get" action="http://sc.it-academy.by/fe/form.php">
+                            <input type="radio" name="survey_response" value="nothing"> ничего<br>
+                            <input type="radio" name="survey_response" value="bad"> неплохо<br>
+                            <input type="radio" name="survey_response" value="good"> хорошо<br>
+                            <input type="radio" name="survey_response" value="super"> супер<br>
+                            <input type="hidden" name="excellent" value="отлично">
+                            <input type="hidden" name="date_vote" value="2013.12.31">
+                            <input type="submit" value="Отправить">
+                             <br><i>Есть скрытое поле<br>name=date_voite, value="2013.12.31"</i>
+                        </form>
+                    </fieldset>
+                </b>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
