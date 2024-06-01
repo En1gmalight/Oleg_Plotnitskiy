@@ -1,0 +1,16 @@
+#p-1 {
+    color: red;
+    width: 300px;
+}
+
+.s-1 {
+    color: blue;
+}
+
+.s-2 {
+    font-weight: bold;
+}
+
+span[title*="Селектор ат"] {
+    color: green;
+}

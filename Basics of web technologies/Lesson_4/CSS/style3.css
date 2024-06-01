@@ -1,0 +1,14 @@
+body {
+
+    background-image: url(../Lesson_4/img_bg.png);
+}
+p {
+    width: 100px;
+}
+.letter {
+    color: red;
+}
+
+.line {
+    color: blue;
+}
