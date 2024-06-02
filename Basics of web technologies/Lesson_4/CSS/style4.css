@@ -18,11 +18,15 @@ h1 {
     display: inline-block;
     position: relative;
 }
+a {
+    text-decoration: underline;
+    color: #eb1616;
+}
 
 h1::after {
     content: '';
     display: block;
-    width: 25%; /* Устанавливает длину на 50% от ширины родительского элемента */
+    width: 25%; /* Устанавливает длину на 25% от ширины родительского элемента */
     height: 1px; /* Устанавливает толщину линии */
     background-color: #ef1616; /* Устанавливает цвет линии */
     position: absolute;
