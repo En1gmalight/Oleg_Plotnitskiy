@@ -1,0 +1,61 @@
+
+
+
+
+h1 {
+    color: orange;
+    margin-left: 30%; /* Отступ слева */
+}
+div {
+    font-weight: bold; /* Делает текст жирным */
+}
+h2.orange {
+    color: orange;
+}
+h2.blue {
+    color: blue;
+}
+.letter {
+    color: red;
+    font-size: 2em; /* Изменяет размер буквы/шрифта */
+    font-weight: bold; /* Сделает букву/текст жирнее */
+}
+.word {
+    color: white; /* Белый цвет текста */
+    background-color: green; /* Зеленый цвет фона */
+    font-style: italic; /* Курсивный шрифт */
+}
+.bold {
+    font-weight: 900; /* Сделает текст еще жирнее */
+    font-size: 1.2em; /* Увеличивает размер шрифта/буквы */
+}
+.red {
+    color: red; /* Красный цвет текста */
+    font-weight: bold;
+}
+
+.gray {
+    color: gray; /* Серый цвет текста */
+    font-weight: bold;
+}
+
+.green {
+    color: green; /* Зеленый цвет текста */
+    font-weight: bold;/* Сделает букву/текст жирнее */
+}
+.table-bold-and-center {
+    font-weight: bold; /* Сделает букву/текст жирнее */
+    text-align: center; /* Выравнивает текст по центру */
+    font-size: 1.2em; /* Увеличивает размер шрифта/буквы */
+
+}
+.table-green-and-center {
+    text-align: center; /* Выравнивает текст по центру */
+    color: white; /* шрифт белым */
+    background-color: green; /* Зеленый цвет фона */
+}
+.name {
+    font-weight: bold; /* Сделает букву/текст жирнее */
+    font-size: 1.2em; /* Увеличивает размер шрифта/буквы */
+    color: orange; /* шрифт белым */
+}
