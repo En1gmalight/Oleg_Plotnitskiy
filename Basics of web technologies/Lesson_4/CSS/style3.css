@@ -1,13 +1,21 @@
-body {
-    background-image: url(../img_for_lesson_4/img_bg.png);
-}
+
 p {
-    width: 100px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto
+    text-align:center;
 }
 .letter {
     color: red;
+    font-weight: bold;
+    font-size: 1.5em;
 }
-
-.line {
+.line{
     color: blue;
+}
+.acolor {
+    color: blue;
+}
+body {
+    background-image: url(../img_for_lesson_4/img_bg.png);
 }

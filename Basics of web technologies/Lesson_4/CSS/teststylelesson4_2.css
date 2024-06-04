@@ -1,14 +1,21 @@
 
-#p_1{
-color: red;
-width: 300px;
+p {
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto
+    text-align:center;
 }
-.s_1{
+.letter {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.line{
     color: blue;
 }
-.s_2{
-    font-weight: bold;
+.acolor {
+    color: blue;
 }
-span[title*="Сел"]{
-    color: green;
+body {
+    background-image: url(../img_for_lesson_4/img_bg.png);
 }
