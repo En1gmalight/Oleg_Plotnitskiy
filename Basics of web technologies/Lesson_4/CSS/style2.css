@@ -1,16 +1,16 @@
-#p-1 {
+#p_1 {
     color: red;
     width: 300px;
 }
 
-.s-1 {
+.s_1 {
     color: blue;
 }
 
-.s-2 {
+.s_2 {
     font-weight: bold;
 }
 
-span[title*="Селектор ат"] {
+span[title*="Сел"] {
     color: green;
 }
