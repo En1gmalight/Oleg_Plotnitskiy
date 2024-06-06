@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Jersey+25&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Jersey+25&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Whisper&display=swap');
 
-p {
-    width: 50%; 
-    margin-left: auto;
-    margin-right: auto
-    text-align:center;
-}
-.letter {
+h1, h2, a{
     color: red;
-    font-weight: bold;
-    font-size: 1.5em;
 }
-.line{
-    color: blue;
+h1{
+    margin-bottom: 0;
 }
-.acolor {
-    color: blue;
+code {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    width: 35%;
 }
-body {
-    background-image: url(../img_for_lesson_4/img_bg.png);
+.h1h2{
+    font-family: "Chewy", system-ui;
+}
+p{
+    font-family: "Kanit", sans-serif;
+}
+.cursive{
+    font-family: "Whisper", cursive;
+    margin-top: 0;
 }
