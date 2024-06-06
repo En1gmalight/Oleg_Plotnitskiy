@@ -1,0 +1,44 @@
+h1,
+h2 {
+    color: orange;
+}
+
+h1 {
+    margin-left: 31%;
+}
+
+.h2 {
+    color: blue;
+}
+
+.lette {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.word {
+    color: white;
+    background-color: green;
+    font-style: italic;
+}
+.color_gray {
+    color: gray;
+}
+.color_red {
+    color: red;
+}
+.color_green {
+    color: green;
+}
+td {
+    text-align: center;
+}
+.name {
+    text-align: left;
+    color: orange;
+}
+.cell {
+    background-color: green;
+    color: white;
+}
