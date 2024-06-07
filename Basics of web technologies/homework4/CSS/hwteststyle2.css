@@ -13,14 +13,14 @@ h1 {
 
 .lette {
     color: red;
-    font-size: 2em;
+    font-size: 2em; /*увеличивает размер буквы/текста*/
     font-weight: bold;
 }
 
 .word {
     color: white;
     background-color: green;
-    font-style: italic;
+    font-style: italic; /*текст курсивом*/
 }
 .color_gray {
     color: gray;
