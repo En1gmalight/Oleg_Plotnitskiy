@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+div {
+    width: 285px;
+    border: 4px solid rgb(255, 123, 0);
+    border-radius: 5px;
+    height: 400px;
+
+}
+.BV {
+    font-family: "Merriweather Sans", sans-serif;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    margin: auto;
+    padding: 20px 20px 20px 70px
+}
+.IG {
+    font-family: "Merriweather Sans", sans-serif;
+    padding-left: 28px;
+    color: rgba(82, 79, 79, 0.838);
+    margin-bottom: 5px;
+}
+p {
+    padding-left: 85px;
+    margin-top: 5px;
+    color: rgba(19, 19, 19, 0.829);
+}
+.big_bold {
+    font-size: 55px;
+    font-weight: bold;
+}
+sup {
+    position: relative;
+    top: -1.9em; /* Поднимает символ $ на половину высоты строки */
+    font-weight: bold;
+    color: rgba(82, 79, 79, 0.838);
+    font-size: 15px;
+}
+sub {
+    font-weight: bold;
+    color: rgba(82, 79, 79, 0.838);
+    font-size: 15px;
+}
+ul {
+    margin: 0px 15px 1px 15px;
+    background-color: rgb(220, 243, 243);
+    height: 25px;
+    
+}
+li {
+    color: rgba(69, 68, 67, 0.444);
+    padding-top: 4px;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+.color_ul {
+    background-color: rgba(239, 233, 233, 0.926);
+}
+a {
+    display: block;
+    margin: 25px 17px 30px 17px;
+    border: 4px solid rgb(255, 123, 0);
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none; /*убирает подчеркивание у ссылки*/
+    border-radius: 5px;
+}
+
