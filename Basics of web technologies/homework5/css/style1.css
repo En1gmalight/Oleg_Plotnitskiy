@@ -1,0 +1,56 @@
+
+
+.red {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 6px;
+
+}
+.green {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 6px;
+}
+.blue {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
+#red:checked ~ .red, /*#red - cелекторы идентификатора (ID селектор), 
+:checked в CSS является псевдоклассом и применяется к элементам формы, таким как чекбоксы или радиокнопки, и выбирает элементы, которые в данный момент отмечены.
+~ это комбинатор общих соседей. Он выбирает все элементы с классом .red, которые являются соседями (находятся на том же уровне вложенности) элемента #red:checked
+, (запятая обязательна)*/
+#green:checked ~ .green,
+#blue:checked ~ .blue {
+    display: none; /*скрывает выбранные элементы, делая их невидимыми на странице*/
+}
+input[type="checkbox"] { /*селектор input выбирает в html все элементы input с атрибутом type="checkbox"*/
+    display: none; /*скрывает на странице все checkbox делая их невидимыми */
+}
+
+label[for="red"] { /*селектор label выбирает в html все элементы label с атрибутом for="red"*/
+    color: red; /*делает их красным*/
+    text-decoration: underline; /* text-decoration используется для добавления оформления к тексту. Значение underline добавляет подчеркивание к тексту*/
+}
+
+label[for="green"] {
+    color: green;
+    text-decoration: underline;
+}
+
+label[for="blue"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+#red:checked ~ label[for="red"], /*#red - cелекторы идентификатора (ID селектор), 
+:checked в CSS является псевдоклассом и применяется к элементам формы, таким как чекбоксы или радиокнопки, и выбирает элементы, которые в данный момент отмечены.
+~ это комбинатор общих соседей. Он выбирает все элементы с классом label[for="red"]*/
+#green:checked ~ label[for="green"], 
+#blue:checked ~ label[for="blue"] {
+    color: lightgray; /*текст выбранных меток делается светло-серым*/
+}
