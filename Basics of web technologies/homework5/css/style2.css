@@ -28,6 +28,7 @@
     border-top: none;
     height: 383px;
 
+
     .BV {
         font-family: "Merriweather Sans", sans-serif;
         background-color: rgb(57, 182, 216);
@@ -39,8 +40,14 @@
         /* слева вверху */
         border-top-right-radius: 5px;
         /* справа вверху */
+
     }
-    
+
+    .standart {
+        position: relative;
+        top: 7px;
+    }
+
     .IG {
         font-family: "Merriweather Sans", sans-serif;
         padding-left: 28px;
@@ -227,7 +234,11 @@
         /* слева вверху */
         border-top-right-radius: 5px;
         /* справа вверху */
+    }
 
+    .ultimate {
+        position: relative;
+        top: 7px;
     }
 
     .IG {
