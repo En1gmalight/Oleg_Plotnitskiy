@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    display: flex;
+    /*.container - это родительский элемент, который содержит все три блока. Свойство display: flex; делает его flex-контейнером*/
+    justify-content: center;
+    /*выравнивает все блоки по центру*/
+    align-items: center;
+}
+
+.header-container {
+    text-align: center;
+    max-width: 100%;
+}
+
+.header-title {
+    text-align: center;
+    max-width: 100%;
+    color: rgb(92, 90, 90)
+}
+
+.left_block {
+
+    width: 285px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    height: 400px;
+
+    .BV {
+        font-family: "Merriweather Sans", sans-serif;
+        background-color: rgb(57, 182, 216);
+        color: white;
+        margin: auto;
+        padding: 20px 20px 20px 75px;
+        border-top-left-radius: 10px;
+        /* слева вверху */
+        border-top-right-radius: 10px;
+        /* справа вверху */
+
+    }
+
+    .IG {
+        font-family: "Merriweather Sans", sans-serif;
+        padding-left: 28px;
+        color: rgba(82, 79, 79, 0.838);
+        margin-bottom: 5px;
+    }
+
+    p {
+        padding-left: 85px;
+        margin-top: 5px;
+        color: rgba(19, 19, 19, 0.829);
+    }
+
+    .big_bold {
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    sup {
+        position: relative;
+        top: -1.9em;
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    sub {
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    ul {
+        margin: 0px 15px 1px 15px;
+        background-color: rgb(220, 243, 243);
+        height: 25px;
+
+    }
+
+    li {
+        color: rgba(69, 68, 67, 0.444);
+        padding-top: 4px;
+        padding-left: 25px;
+        font-weight: bold;
+        font-size: 0.85em;
+        list-style-image: url('https://raw.githubusercontent.com/En1gmalight/Oleg_Plotnitskiy/main/Basics%20of%20web%20technologies/Lesson_5/img_for_lesson_5/arrow.png');
+    }
+
+    .color_ul {
+        background-color: rgba(239, 233, 233, 0.926);
+    }
+
+    a {
+        display: block;
+        margin: 25px 17px 30px 17px;
+        border: 4px solid rgb(77, 88, 149);
+        border-radius: 5px;
+        height: 30px;
+        background-color: rgb(77, 88, 149);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+    }
+
+}
+
+.center_block {
+    width: 285px;
+    border: 4px solid rgb(255, 123, 0);
+    border-radius: 5px;
+    height: 400px;
+
+
+    .BV {
+        font-family: "Merriweather Sans", sans-serif;
+        background-color: rgb(255, 123, 0);
+        color: white;
+        margin: auto;
+        padding: 20px 20px 20px 75px
+    }
+
+    .IG {
+        font-family: "Merriweather Sans", sans-serif;
+        padding-left: 28px;
+        color: rgba(82, 79, 79, 0.838);
+        margin-bottom: 5px;
+    }
+
+    p {
+        padding-left: 85px;
+        margin-top: 5px;
+        color: rgba(19, 19, 19, 0.829);
+    }
+
+    .big_bold {
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    sup {
+        position: relative;
+        top: -1.9em;
+        /* Поднимает символ $ на половину высоты строки */
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    sub {
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    ul {
+        margin: 0px 15px 1px 15px;
+        background-color: rgb(220, 243, 243);
+        height: 25px;
+
+    }
+
+    li {
+        color: rgba(69, 68, 67, 0.444);
+        padding-top: 4px;
+        padding-left: 25px;
+        font-weight: bold;
+        font-size: 0.85em;
+        list-style-image: url('https://raw.githubusercontent.com/En1gmalight/Oleg_Plotnitskiy/main/Basics%20of%20web%20technologies/Lesson_5/img_for_lesson_5/arrow.png');
+    }
+
+    .color_ul {
+        background-color: rgba(239, 233, 233, 0.926);
+    }
+
+    a {
+        display: block;
+        /*это свойство определяет, как элемент должен быть отображен на веб-странице. Значение block делает элемент блочным, что означает, что он занимает всю доступную ширину и создает новую строку до и после элемента*/
+        margin: 25px 17px 30px 17px;
+        /*устанавливает внешние отступы элемента. Значения задаются в следующем порядке: верх, право, низ, лево*/
+        border: 4px solid rgb(255, 123, 0);
+        /*устанавливает стиль, ширину и цвет границы элемента*/
+        border-radius: 5px;
+        /*устанавливает радиус скругления углов границы элемента*/
+        height: 30px;
+        /*устанавливает высоту элемента*/
+        background-color: rgb(255, 123, 0);
+        /*фон элемента*/
+        color: white;
+        /*цвет шрифта*/
+        font-weight: bold;
+        /*толщина шрифта элемента*/
+        text-align: center;
+        /*горизонтальное выравнивание текста элемента*/
+        padding-top: 10px;
+        /*внутренний отступ сверху элемента*/
+        text-decoration: none;
+        /*убирает подчеркивание у ссылки или любые другие декорации текста линиями*/
+        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+        /*эффект тени*/
+    }
+
+}
+
+.right_block {
+    width: 285px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    height: 400px;
+
+    .BV {
+        font-family: "Merriweather Sans", sans-serif;
+        background-color: rgb(45, 193, 161);
+        color: white;
+        margin: auto;
+        padding: 20px 20px 20px 75px;
+        border-top-left-radius: 10px;
+        /* слева вверху */
+        border-top-right-radius: 10px;
+        /* справа вверху */
+
+    }
+
+    .IG {
+        font-family: "Merriweather Sans", sans-serif;
+        padding-left: 28px;
+        color: rgba(82, 79, 79, 0.838);
+        margin-bottom: 5px;
+    }
+
+    p {
+        padding-left: 85px;
+        margin-top: 5px;
+        color: rgba(19, 19, 19, 0.829);
+    }
+
+    .big_bold {
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    sup {
+        position: relative;
+        top: -1.9em;
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    sub {
+        font-weight: bold;
+        color: rgba(82, 79, 79, 0.838);
+        font-size: 15px;
+    }
+
+    ul {
+        margin: 0px 15px 1px 15px;
+        background-color: rgb(220, 243, 243);
+        height: 25px;
+
+    }
+
+    li {
+        color: rgba(69, 68, 67, 0.444);
+        padding-top: 4px;
+        padding-left: 25px;
+        font-weight: bold;
+        font-size: 0.85em;
+        list-style-image: url('https://raw.githubusercontent.com/En1gmalight/Oleg_Plotnitskiy/main/Basics%20of%20web%20technologies/Lesson_5/img_for_lesson_5/arrow.png');
+    }
+
+    .color_ul {
+        background-color: rgba(239, 233, 233, 0.926);
+    }
+
+    a {
+        display: block;
+        margin: 25px 17px 30px 17px;
+        border: 4px solid rgb(77, 88, 149);
+        border-radius: 5px;
+        height: 30px;
+        background-color: rgb(77, 88, 149);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+    }
+}
