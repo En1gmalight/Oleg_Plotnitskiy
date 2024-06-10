@@ -24,22 +24,23 @@
 
     width: 285px;
     border: 1px solid rgb(230, 230, 230);
-    border-radius: 10px;
-    height: 400px;
+    border-radius: 5px;
+    border-top: none;
+    height: 383px;
 
     .BV {
         font-family: "Merriweather Sans", sans-serif;
         background-color: rgb(57, 182, 216);
         color: white;
-        margin: auto;
         padding: 20px 20px 20px 75px;
-        border-top-left-radius: 10px;
+        padding-top: 9px;
+        margin-top: 3px;
+        border-top-left-radius: 5px;
         /* слева вверху */
-        border-top-right-radius: 10px;
+        border-top-right-radius: 5px;
         /* справа вверху */
-
     }
-
+    
     .IG {
         font-family: "Merriweather Sans", sans-serif;
         padding-left: 28px;
@@ -104,7 +105,7 @@
         text-align: center;
         padding-top: 10px;
         text-decoration: none;
-        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+        box-shadow: 0px 10px 5px -5px rgba(13, 1, 40, 0.75);
     }
 
 }
@@ -200,7 +201,7 @@
         /*внутренний отступ сверху элемента*/
         text-decoration: none;
         /*убирает подчеркивание у ссылки или любые другие декорации текста линиями*/
-        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+        box-shadow: 0px 10px 5px -5px rgba(156, 76, 2, 0.75);
         /*эффект тени*/
     }
 
@@ -209,8 +210,10 @@
 .right_block {
     width: 285px;
     border: 1px solid rgb(230, 230, 230);
-    border-radius: 10px;
-    height: 400px;
+    border-radius: 5px;
+    border-top: none;
+    height: 383px;
+
 
     .BV {
         font-family: "Merriweather Sans", sans-serif;
@@ -218,9 +221,11 @@
         color: white;
         margin: auto;
         padding: 20px 20px 20px 75px;
-        border-top-left-radius: 10px;
+        padding-top: 9px;
+        margin-top: 3px;
+        border-top-left-radius: 5px;
         /* слева вверху */
-        border-top-right-radius: 10px;
+        border-top-right-radius: 5px;
         /* справа вверху */
 
     }
@@ -289,6 +294,6 @@
         text-align: center;
         padding-top: 10px;
         text-decoration: none;
-        box-shadow: 0px 10px 5px -5px rgba(124, 62, 3, 0.75);
+        box-shadow: 0px 10px 5px -5px rgba(13, 1, 40, 0.75);
     }
 }

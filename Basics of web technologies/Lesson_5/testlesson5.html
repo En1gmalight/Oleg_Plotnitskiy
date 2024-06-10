@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,75 +6,93 @@
   <title>Title</title>
   <style>
     /*
-	width + padding + border = итоговая ширина
-	height + padding + border = итоговая высота
-
-	IE6 in QM
-	width = итоговая ширина
-	height = итоговая ширина
-	padding и бордер входит в ширину,
-	уменьшая контент часть.
-	это бывает ОЧЕНЬ удобно
-
+	Блочные элементы стремятся заполнить родителя
+	используя для этого значения auto для
+	width и margin
 */
 
     .d1, .d2, .d3, .d4
-
     {
       font: 24px Helvetica, sans-serif;
 
-      width: 300px;
       margin-top: 10px;
 
       color: #fff;
       background: red;
     }
 
-    .d2
-    {
-      padding-left: 30px;
-      padding-right: 10px;
-    }
+    /*
+      Если значения margin и width : auto,
+      то контент-часть блока (width) растягивается
+      на всю ширину родителя
 
-    .d3
-    {
-      margin-left: 30px;
-      border-right: 10px solid #000;
-    }
+      Если у блока задана ширина, то правое поле
+      растягивается на всю ширину родителя
+    */
 
-    .container
+    .d1
     {
       width: 300px;
-      height: 300px;
-      margin-top: 10px;
+    }
 
-      border: 1px solid red;
+    /*
+      Если у блока задана ширина
+      и огромное правое поле, то оно просто
+      займет все свободное пространство
+      до границ родителя
+
+      горизонтального скролла не будет
+
+      скролл появится если поменять -right на -left
+      теперь есть что толкать — сам блок
+    */
+    .d2
+    {
+      width: 300px;
+      margin-right: 3000px;
+    }
+
+    /*
+      Наиболее полезно и неочевидно
+      выравнивать с помощью margin блоки
+    */
+    .d3
+    {
+      width: 300px;
+      margin: auto;
     }
 
     .d4
     {
-      box-sizing: border-box;
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 10px;
-      border: 10px solid orange;
-      /*
-        margin-left: 10px;
-        margin-right: 10px;
-      */
-
-      background: #000;
+      width: 300px;
+      margin-left: auto;
     }
 
-    input
+    .container
     {
-      width: 100%;
-      box-sizing: border-box;
-      /*
-        padding: 0;
-        border: 0;
-        background: red;
-      */
+      position: relative;
+      width: 300px;
+      height: 300px;
+
+      color: #fff;
+
+      border: 1px solid #000;
+    }
+
+    .d5
+    {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+
+      width: 50px;
+      height: 50px;
+
+      margin: auto;
+
+      background: red;
     }
   </style>
 </head>
@@ -81,9 +100,12 @@
   <div class="d1">1</div>
   <div class="d2">2</div>
   <div class="d3">3</div>
+  <div class="d4">4</div>
+
   <div class="container">
-    <div class="d4">4</div>
-    <input type="text"/>
+    <div class="d5">5</div>
   </div>
 </body>
 </html>
+3-margin-paddings.html
+3-margin-paddings.html. На экране.
