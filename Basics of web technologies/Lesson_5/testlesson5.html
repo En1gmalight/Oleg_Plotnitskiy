@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +6,106 @@
   <title>Title</title>
   <style>
     /*
-      замещаемые элементы
-      уже хранят в себе размер
-      поэтому не заполняют родителя,
-      когда становятся блочными
-    */
-    img,
-    input
+	Блочные элементы стремятся заполнить родителя
+	используя для этого значения auto для
+	width и margin
+*/
+
+    .d1, .d2, .d3, .d4
     {
-      display: block;
-      width: auto;
+      font: 24px Helvetica, sans-serif;
+
+      margin-top: 10px;
+
+      color: #fff;
+      background: red;
+    }
+
+    /*
+      Если значения margin и width : auto,
+      то контент-часть блока (width) растягивается
+      на всю ширину родителя
+
+      Если у блока задана ширина, то правое поле
+      растягивается на всю ширину родителя
+    */
+
+    .d1
+    {
+      width: 300px;
+    }
+
+    /*
+      Если у блока задана ширина
+      и огромное правое поле, то оно просто
+      займет все свободное пространство
+      до границ родителя
+
+      горизонтального скролла не будет
+
+      скролл появится если поменять -right на -left
+      теперь есть что толкать — сам блок
+    */
+    .d2
+    {
+      width: 300px;
+      margin-right: 3000px;
+    }
+
+    /*
+      Наиболее полезно и неочевидно
+      выравнивать с помощью margin блоки
+    */
+    .d3
+    {
+      width: 300px;
+      margin: auto;
+    }
+
+    .d4
+    {
+      width: 300px;
+      margin-left: auto;
+    }
+
+    .container
+    {
+      position: relative;
+      width: 300px;
+      height: 300px;
+
+      color: #fff;
+
+      border: 1px solid #000;
+    }
+
+    .d5
+    {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+
+      width: 50px;
+      height: 50px;
+
+      margin: auto;
+
+      background: red;
     }
   </style>
 </head>
 <body>
-  <img src="https://yandex.st/lego/_/X31pO5JJJKEifJ7sfvuf3mGeD_8.png" alt=""/>
-  <input type="text"/>
-  <input type="search"/>
-  <input type="radio"/>
-  <input type="submit"/>
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+
+  <div class="container">
+    <div class="d5">5</div>
+  </div>
 </body>
 </html>
+3-margin-paddings.html
+3-margin-paddings.html. На экране.
