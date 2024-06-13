@@ -2,7 +2,6 @@ table {
     border-spacing: 0;
     width: 400px;
     height: 400px;
-
 }
 
 tr:first-child,
@@ -16,4 +15,15 @@ td:last-child {
     width: 20px;
     background-color: aquamarine;
 }
-tr:nth-child()
+
+tr:nth-child(even) td:nth-child(2n+3) {
+    background-color: black;
+}
+
+tr:nth-child(2n+3) td:nth-child(2n) {
+    background-color: black;
+}
+
+tr:nth-child(10) td:nth-child(n), tr:nth-child(2n+3) td:nth-child(10) {
+    background-color: aquamarine;
+}

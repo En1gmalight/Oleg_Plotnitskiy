@@ -1,7 +1,10 @@
 table {
     border-spacing: 0;
+    /*устанавливает расстояние между границами ячеек таблицы равным 0, границы смежных ячеек будут вплотную друг к другу*/
     width: 400px;
+    /* ширина и высота когда выставляется, то табличка стразу отображается нужного размера*/
     height: 400px;
+    /* ширина и высота когда выставляется, то табличка стразу отображается нужного размера*/
 }
 
 tr:first-child,
@@ -15,12 +18,16 @@ td:last-child {
     width: 20px;
     background-color: aquamarine;
 }
+
 tr:nth-child(even) td:nth-child(2n+3) {
     background-color: black;
 }
+
 tr:nth-child(2n+3) td:nth-child(2n) {
     background-color: black;
 }
-tr:nth-child(10) td:nth-child(n), tr:nth-child(2n+3) td:nth-child(10) {
+
+tr:nth-child(10) td:nth-child(n),
+tr:nth-child(2n+3) td:nth-child(10) {
     background-color: aquamarine;
 }
