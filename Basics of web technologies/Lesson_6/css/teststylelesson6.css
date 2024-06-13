@@ -1,15 +1,19 @@
 table {
     border-spacing: 0;
-}
-td {
-    border-bottom: 2px solid gray;
-    padding: 5px 15px;
-    margin: 0;
+    width: 400px;
+    height: 400px;
 
 }
-td:nth-child(2n+3) { 
-    background-color: rgb(249, 231, 204);
+
+tr:first-child,
+tr:last-child {
+    height: 20px;
+    background-color: aquamarine;
 }
-tr:nth-child(even) {
-    background-color: rgb(201, 177, 233);
+
+td:first-child,
+td:last-child {
+    width: 20px;
+    background-color: aquamarine;
 }
+tr:nth-child()
