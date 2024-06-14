@@ -5,29 +5,30 @@ table {
     /* ширина и высота когда выставляется, то табличка стразу отображается нужного размера*/
     height: 400px;
     /* ширина и высота когда выставляется, то табличка стразу отображается нужного размера*/
+    margin: 0 auto; /* выравнивает по центру страницы*/
+    border: 1px solid grey;
 }
 
-tr:first-child,
-tr:last-child {
+td {
+    border: 1px solid grey; /*делает границы ячеек серыми с сплошной шириной границы 1px*/
+}
+tr:first-child, tr:last-child { /*первая и последняя строка*/
     height: 20px;
     background-color: aquamarine;
 }
-
-td:first-child,
-td:last-child {
+td:first-child, td:nth-child(10) { /*первая и десятая ячейка или можно было не 10 а last-child прописать*/
     width: 20px;
     background-color: aquamarine;
 }
-
-tr:nth-child(even) td:nth-child(2n+3) {
+tr:nth-child(even) td:nth-child(2n+3) { /*тут через пробел указываем что в каждой четной строке будет закрашиваться каждая вторая ячейка, начиная с 3-ей*/
     background-color: black;
 }
-
-tr:nth-child(2n+3) td:nth-child(2n) {
+tr:last-child td:nth-child(n) { /* через пробел пишем что в последней строке каждая ячейка(n) будет закрашена*/
+    background-color: aquamarine;
+}
+tr:nth-child(odd) td:nth-child(2n) { /*через пробел в каждой нечетной строке каждая вторая(2n) ячейка будет окрашена в черный цвет*/
     background-color: black;
 }
-
-tr:nth-child(10) td:nth-child(n),
-tr:nth-child(2n+3) td:nth-child(10) {
+tr:first-child td:nth-child(n), tr:nth-child(n) td:nth-child(10) { /*в 1-ой строке будет окрашена каждая ячейка и в каждой строке 10-я ячейка*/
     background-color: aquamarine;
 }

@@ -1,29 +1,30 @@
 table {
-    border-spacing: 0;
-    width: 400px;
-    height: 400px;
+   width: 400px; 
+   height: 400px;
+   border: 1px solid grey; 
+   border-spacing: 0; /*убирает расстояние между ячейками*/
+   margin: 0 auto; /* выравнивает по центру страницы*/
 }
-
-tr:first-child,
-tr:last-child {
+td {
+    border: 1px solid grey;
+}
+tr:first-child, tr:last-child {
     height: 20px;
     background-color: aquamarine;
 }
-
-td:first-child,
-td:last-child {
+td:first-child, td:nth-child(10) {
     width: 20px;
     background-color: aquamarine;
 }
-
 tr:nth-child(even) td:nth-child(2n+3) {
     background-color: black;
 }
-
-tr:nth-child(2n+3) td:nth-child(2n) {
+tr:last-child td:nth-child(n) {
+    background-color: aquamarine;
+}
+tr:nth-child(odd) td:nth-child(2n) {
     background-color: black;
 }
-
-tr:nth-child(10) td:nth-child(n), tr:nth-child(2n+3) td:nth-child(10) {
+tr:first-child td:nth-child(n), tr:nth-child(n) td:nth-child(10) {
     background-color: aquamarine;
 }
