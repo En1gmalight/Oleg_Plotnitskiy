@@ -1,2 +1,118 @@
+p {
+    margin: 0;
+    padding: 0;
+}
 
+.wrap {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    min-width: 500px;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
 
+.content {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    margin: 1% auto;
+}
+
+.h1 {
+    text-transform: uppercase;
+    color: steelblue;
+    /*text-align: center;*/
+    font-size: 230%;
+}
+
+.h10range {
+    color: chocolate;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    min-width: 475px;
+    max-width: 475px;
+    padding: 0 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.comment::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+.comment {
+    position: relative;
+    float: right;
+    width: 330px;
+    min-height: 60px;
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.info {
+    height: 20px;
+    border-bottom: dotted #8a8a8a;
+}
+
+.name::before {
+    content: '-';
+    width: 10px;
+    display: inline-block;
+}
+.align {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.name {
+    display: block;
+    font-style: italic;
+    color: #899dc2;
+    float: left;
+    font-weight: bold;
+}
+
+.type {
+    display: block;
+    font-style: italic;
+    color: #899dc2;
+    float: right;
+    font-weight: bold;
+}
+
+.text {
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .comment::before {
+        border: none;
+    }
+}
