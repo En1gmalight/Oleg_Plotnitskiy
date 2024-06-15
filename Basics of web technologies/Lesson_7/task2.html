@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .adaptive {
+            height: 100px;
+            background-color: Lightgrey
+        }
+
+        .forSmall,
+        .forLarge {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            display: none;
+        }
+
+        .forSmall {
+            border-color: Black;
+            background-color: Orange;
+        }
+
+        .forLarge {
+            border-color: darkslategray;
+            background-color: Darkblue;
+        }
+
+        @media (min-width: 576px) {
+            .adaptive {
+                background-color: orange;
+            }
+
+            .forSmall {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .adaptive {
+                background-color: red;
+            }
+
+            .forSmall {
+                display: block;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .adaptive {
+                background-color: green;
+            }
+
+            .forLarge {
+                display: block;
+            }
+
+            .forSmall {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .adaptive {
+                background-color: blue;
+            }
+
+            .forLarge {
+                display: block;
+                /*display: block; делает элемент блочным. Блочные элементы начинаются с новой строки и занимают всю доступную ширину, создавая “блок” контента. Примеры блочных элементов включают <div>, <p> и <h1> до <h6>*/
+            }
+
+            .forSmall {
+                display: none;
+                /*display: none; полностью убирает элемент из потока документа. Это означает, что элемент и его содержимое не отображаются и не занимают место на странице. Это полезно, когда вы хотите временно скрыть элемент.*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="adaptive">
+        <div class="forSmall"></div>
+        <div class="forLarge"></div>
+    </div>
+</body>
+
+</html>
