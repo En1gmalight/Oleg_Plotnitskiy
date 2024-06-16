@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Треугольник</title>
+    <style>
+        .block {
+            background: green;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+            font-size: 130%;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .block2 {
+            background: green;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+            font-size: 130%;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            max-width: 800px;
+        }
+
+        .block3 {
+            background: green;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+            font-size: 130%;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            max-width: 600px;
+        }
+        .block4 {
+            background: green;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+            font-size: 130%;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            max-width: 400px;
+            
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            border: 4px solid rgb(50, 102, 148);
+        }
+
+        .block::after {
+            content: '';
+            position: absolute;
+            /* Абсолютное позиционирование */
+            left: 140px;
+            bottom: -20px;
+            /* Положение треугольника */
+            border: 10px solid transparent;
+            /* Прозрачные границы */
+            border-top: 10px solid green;
+            /* Добавляем треугольник !!!ВНИЗУ!!!*/
+        }
+
+        .block2::after {
+            content: '';
+            position: absolute;
+            /* Абсолютное позиционирование */
+            left: -20px;
+            bottom: 20px;
+            /* Положение треугольника */
+            border: 10px solid transparent;
+            /* Прозрачные границы */
+            border-right: 10px solid green;
+            /* Добавляем треугольник !!!СЛЕВА!!! */
+        }
+
+        .block3::after {
+            content: '';
+            position: absolute;
+            /* Абсолютное позиционирование */
+            left: 641px;
+            bottom: 32px;
+            /* Положение треугольника */
+            border: 10px solid transparent;
+            /* Прозрачные границы */
+            border-left: 10px solid green;
+            /* Добавляем треугольник !!!СПРАВА!!!*/
+        }
+        .block4::after {
+            content: '';
+            position: absolute;
+            /* Абсолютное позиционирование */
+            left: 217px;
+            bottom: 97px;
+            /* Положение треугольника */
+            border: 10px solid transparent;
+            /* Прозрачные границы */
+            border-bottom: 10px solid green;
+            /* Добавляем треугольник !!!ВВЕРХУ!!!*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        Глокая куздра штеко будланула бокра и кудрячит бокрёнка.
+    </div>
+    <div class="block2">
+        Глокая куздра штеко будланула бокра и кудрячит бокрёнка.
+    </div>
+    <div class="block3">
+        Глокая куздра штеко будланула бокра и кудрячит бокрёнка.
+    </div>
+    <div class="block4">
+        <a href="https://htmlbook.ru/blog/treugolniki-cherez-css" target="_blank">Остальные треугольники можно глянуть здесь</a>
+    </div>
+</body>
+
+</html>
